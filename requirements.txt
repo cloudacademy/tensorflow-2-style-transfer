@@ -1,4 +1,4 @@
 absl-py
-'tensorflow[and-cuda]'
+tensorflow[and-cuda]
 tensorflow-datasets
 tqdm
