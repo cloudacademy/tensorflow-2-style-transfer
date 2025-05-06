@@ -28,9 +28,9 @@ from __future__ import unicode_literals
 import tensorflow as tf
 from absl import flags
 from tensorflow import linalg
-from tensorflow.python.keras import applications
-from tensorflow.python.keras import models
-from tensorflow.python.keras.applications.vgg19 import VGG19
+from tensorflow.keras import applications
+from tensorflow.keras import models
+from tensorflow.keras.applications.vgg19 import VGG19
 
 FLAGS = flags.FLAGS
 

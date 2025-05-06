@@ -1,5 +1,4 @@
 absl-py
-tensorflow-gpu==2.7.2
-tfds-nightly
-numpy
+'tensorflow[and-cuda]'
+tensorflow-datasets
 tqdm
