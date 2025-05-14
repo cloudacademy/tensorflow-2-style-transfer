@@ -1,0 +1,42 @@
+{
+        "agent": {
+                "metrics_collection_interval": 60,
+                "run_as_user": "root"
+        },
+        "metrics": {
+                "aggregation_dimensions": [
+                        [
+                                "InstanceId"
+                        ]
+                ],
+                "append_dimensions": {
+                        "AutoScalingGroupName": "${aws:AutoScalingGroupName}",
+                        "ImageId": "${aws:ImageId}",
+                        "InstanceId": "${aws:InstanceId}",
+                        "InstanceType": "${aws:InstanceType}"
+                },
+                "metrics_collected": {
+                        "nvidia_gpu": {
+                                "measurement": [
+                                        "utilization_gpu",
+                                        "temperature_gpu",
+                                        "power_draw",
+                                        "utilization_memory",
+                                        "fan_speed",
+                                        "memory_total",
+                                        "memory_used",
+                                        "memory_free",
+                                        "pcie_link_gen_current",
+                                        "pcie_link_width_current",
+                                        "encoder_stats_session_count",
+                                        "encoder_stats_average_fps",
+                                        "encoder_stats_average_latency",
+                                        "clocks_current_graphics",
+                                        "clocks_current_sm",
+                                        "clocks_current_memory",
+                                        "clocks_current_video"
+                                ]
+                        }
+                }
+        }
+}
